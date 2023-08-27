@@ -9,6 +9,7 @@ class ResultsPage(BasePage):
         results = self.find_elements(self.SEARCH_RESULTS)
         first_result = results[0].text
         assert "www.fluke.com" in first_result
+        # checking if test passing while PR
 
 
 
