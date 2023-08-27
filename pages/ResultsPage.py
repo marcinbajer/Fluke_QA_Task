@@ -8,7 +8,7 @@ class ResultsPage(BasePage):
     def assertFlukeInFirstResult(self):
         results = self.find_elements(self.SEARCH_RESULTS)
         first_result = results[0].text
-        assert "www.fluke.com/" in first_result
+        assert "www.fluke.com" in first_result
 
 
 
